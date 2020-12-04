@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>Heart Disease Prediction System</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}">
+<link rel="icon" href="{{url_for('static',filename='/img/UEM_Logo.jpg')}}" type="image/icon type">
+
+
+</head>
+<body style="width: 100%">
+	<audio loop autoplay>
+		<source src="{{ url_for('static', filename='audio.mp3') }}" type="audio/mp3">
+	</audio>
+	<div id="wrapper">
+		<div id="header-wrapper">
+			<div id="header" class="container">
+				<div id="logo">
+					<h1 style="padding-left: 5px ;padding-top:2%"><a href="{{url_for('main_page')}}">Heart Disease
+							Prediction System</a></h1>
+				</div>
+
+				<div id="menu" style="font-size: 1.4em;">
+					<ul>
+
+						<li class="current_page_item"><a href="{{url_for('test_page')}}" accesskey="2"
+								title="">Tests</a></li>
+						<li><a href="{{url_for('about_page')}}" accesskey="4" title="">About Us</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="height: 27em; width: 100%; background-image: url(/static/img/heartgif.gif)">
+		</div>
+	</div>
+<body >
+<h1 align="center" style="padding-top: 3%;padding-bottom: 2%; background-color:white;">{{inf}}</h1>
+<h3  style="padding-top: 1%;padding-bottom: 1%;color: red;background-color:white;">*Disclaimer: This result is genarated by machine. So before making any conclusion we request you to cosult a heart specialist!!! </h1>
+
+
+	<div style="background-color: #FFFF00">
+		<div id="page" class="container" style="background-color: #FF4500;padding-top: 2%;">
+			<div class="container">
+				
+				<div>
+								
+								&nbsp;&nbsp;<a onclick="window.open('..\\static\\pdf\\ambulance_list.pdf')"
+								class="button" style="margin-bottom: 3%;">Ambulance List</a>
+								&nbsp;&nbsp;<a onclick="window.open('..\\static\\pdf\\blood_bank_list.pdf')"
+								class="button" style="margin-bottom: 3%;">Blood Bank List</a>
+								&nbsp;&nbsp;<a onclick="window.open('..\\static\\pdf\\diagonestic_centre_list.pdf')"
+								class="button" style="margin-bottom: 3%;">Diagonestic Centers</a>
+
+				</div>
+
+			</div>
+			<iframe src="https://www.365doctor.in/cardiologist-in-kolkata" title="Doctors near you" width="75%" height="300">
+			</iframe>
+		</div></div>
+		<div class="container" align="center">
+			<p style="margin-bottom: 20px">&copy; All rights reserved by Group-66@2020 | Devoloped by Group 66 under Arunabha Tarafdar | 2020 </p>
+		</div>
+</body>
+</html>

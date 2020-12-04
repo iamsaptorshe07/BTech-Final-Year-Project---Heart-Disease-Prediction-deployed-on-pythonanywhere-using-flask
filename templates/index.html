@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>Heart Disease Prediction System</title>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}">
+	<link rel="icon" href="{{url_for('static',filename='/img/UEM_Logo.jpg')}}" type="image/icon type">
+
+
+</head>
+
+<body style="width: 100%;background-color: #FF4500">
+	<!--
+	<audio loop autoplay>
+		<source src="{{ url_for('static', filename='audio.mp3') }}" type="audio/mp3">
+	</audio> -->
+	<div id="wrapper">
+		<div id="header-wrapper">
+			<div id="header" class="container">
+				<div id="logo">
+					<h1 style="padding-left: 5px ;padding-top:2%"><a href="{{url_for('main_page')}}">Heart Disease Prediction System</a></h1>
+				</div>
+
+				<div  id="menu" style="font-size: 1.4em;">
+					<ul>
+						
+						<li class="current_page_item"><a href="{{url_for('test_page')}}" accesskey="2" title="">Tests</a></li>
+						<li><a href="{{url_for('about_page')}}" accesskey="4" title="">About Us</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="banner">
+			<div class="container">
+				<div class="title">
+					<span class="byline"></span> </div>
+				<ul class="actions">
+					<li><a href="{{url_for('test_page')}}" class="button">START PROCESS</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--recommendation intro-->
+	<div style="background-color: #FFFF00">
+		<div id="page" class="container" style="background-color: #FF4500">
+			<div class="container">
+				<h2 align="center" style="color: #ffffff; font-size: 3em;padding-left: 2em;">HOSPITAL NEAR
+					YOU</h1>
+					<h3 align="center" style="padding-top:1em;color:#FFFFFF">If there is any emergency & you need the
+						help of expert opinion, we recommend you to see this.
+				</h2>
+				<div>
+					<br><br>
+					<ul class="actions">
+						<li><a href="https://www.google.com/search?q=heart+hospital+recommendation+to+location&oq=heart+hospital+recommendation+to+location"
+								class="button" style="margin-bottom: 3%;">Heart Speciality Near
+								You </a></li>
+
+				</div>
+
+			</div>
+			<div>
+				<div class="title">
+					<h2 style="color: #FFFFFF">About Heart Disease</h2>
+					<h3 align="center" style="margin-top:3%;color: #FFFFFF">Heart disease is the leading cause of death
+						in the United States, causing about 1 in 4 deaths.1 The term “heart disease” refers to several
+						types of heart conditions. In the United States, the most common type of heart disease is
+						coronary artery disease (CAD), which can lead to heart attack. You can greatly reduce your risk
+						for heart disease through lifestyle changes and, in some cases, medicine.</h3>
+				</div>
+				<div>
+					<ul class="actions">
+						<li><a href="https://www.cdc.gov/heartdisease/about.htm" class="button"
+								style="margin-bottom: 3%;">Know more </a></li>
+				</div>
+			</div>
+
+			<div>
+				<div class="title">
+					<h2 style="color: #FFFFFF">Know Your Risk for Heart Disease</h2>
+					<h3 align="center" style="margin-top:3%;color: #FFFFFF">Several health conditions, your lifestyle,
+						and your age and family history can increase your risk for heart disease. These are called risk
+						factors. About half of all Americans (47%) have at least 1 of 3 key risk factors for heart
+						disease: high blood pressure, high cholesterol, and smoking.1
+
+						Some risk factors for heart disease cannot be controlled, such as your age or family history.
+						But you can take steps to lower your risk by changing the factors you can control.</h3>
+				</div>
+				<div>
+					<ul class="actions">
+						<li><a href="https://www.cdc.gov/heartdisease/risk_factors.htm" class="button"
+								style="margin-bottom: 3%;">Know more </a></li>
+				</div>
+			</div>
+
+			<div>
+				<div class="title">
+					<h2 style="color: #FFFFFF">Heart Disease Resources for Health Professionals</h2>
+					<h3 align="center" style="margin-top:3%;color: #FFFFFF">Health professionals can access a variety of
+						tools, resources, and training materials to develop and support programs that focus on
+						preventing heart disease.For more information click below.</h3>
+				</div>
+				<div>
+					<ul class="actions">
+						<li><a href="https://www.cdc.gov/heartdisease/prevention.htm" class="button"
+								style="margin-bottom: 3%;">Know more </a></li>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="container" align="center" style="color: #FFFFFF">
+		<p style="margin-top: 3%">&copy; All rights reserved by Group-66@2020 | Devoloped by Group 66 under
+			Arunabha Tarafdar | 2020 </p>
+	</div>
+	
+</body>
+
+</html>
